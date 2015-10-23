@@ -46,7 +46,6 @@ Start by using the `nix-repl`.
 * [Paths]({{ site.github.repo }}/tree/master/basics/paths.nix)
 * [Files]({{ site.github.repo }}/tree/master/basics/files.nix)
 * [Lists]({{ site.github.repo }}/tree/master/basics/lists.nix)
-* [Attrsets]({{ site.github.repo }}/tree/master/basics/attrsets.nix)
 * [Lambdas]({{ site.github.repo }}/tree/master/basics/lambdas.nix)
 * [Concatenation]({{ site.github.repo }}/tree/master/basics/concatenation.nix)
 * [Importing]({{ site.github.repo }}/tree/master/basics/importing.nix)
