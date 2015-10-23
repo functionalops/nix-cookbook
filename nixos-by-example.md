@@ -7,7 +7,6 @@ title: NixOS By Example
 
 Chef to Nix:
 
-Chef | Nix/NixOS
 * `run_list` (Ruby DSL) => Nix expression
 * `cookbook` (Ruby metadata DSL et al) => Nix expression (attrset)
 * `recipe` (Ruby DSL) => Nix expression (module)
