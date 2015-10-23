@@ -54,20 +54,23 @@ Start by using the `nix-repl`.
 
 TODO: Provide examples for packaging different types of projects.
 
-Basic introductory packaging slides for Nix can be found at link:doc/nix.adoc[].
+Basic introductory packaging slides for Nix can be found at
+link:http://funops.co/nix-cookbook/nix-by-example[Nix By Example].
 
 ### Modules
 
 TODO: Provide examples of using existing modules and writing your own custom
 NixOS modules.
 
-Basic introductory NixOS slides can be found at link:doc/nixos.adoc[].
+Basic introductory NixOS slides can be found at
+link:http://funops.co/nix-cookbook/nixos-by-example[NixOS By Example].
 
 ### Deployments
 
 TODO: Provide examples of writing your own NixOps based deployments.
 
-Basic introductory NixOps slides can be found at link:doc/nixops.adoc[].
+Basic introductory NixOps slides can be found at
+link:http://funops.co/nix-cookbook/nixops-by-example[NixOps By Example].
 
 ### Jobs
 
