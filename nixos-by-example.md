@@ -8,16 +8,16 @@ title: NixOS By Example
 Chef to Nix:
 
 Chef | Nix/NixOS
-`run_list` (Ruby DSL) | Nix expression
-`cookbook` (Ruby metadata DSL et al) | Nix expression (attrset)
-`recipe` (Ruby DSL) | Nix expression (module)
-`attributes` (JSON/Ruby/...) | Nix expression (attrset)
-`data_bag` (JSON/Ruby/...) | Nix expression (attrset)
-`environments` (JSON/Ruby/...) | Nix expression (attrset)
-`libraries` (Ruby) | Nix expression (functions and data)
-`resources` (Ruby) | Nix expression (functions and data)
-`files` | File
-`templates` (ERB) | Files using vars and expressions
+* `run_list` (Ruby DSL) => Nix expression
+* `cookbook` (Ruby metadata DSL et al) => Nix expression (attrset)
+* `recipe` (Ruby DSL) => Nix expression (module)
+* `attributes` (JSON/Ruby/...) => Nix expression (attrset)
+* `data_bag` (JSON/Ruby/...) => Nix expression (attrset)
+* `environments` (JSON/Ruby/...) => Nix expression (attrset)
+* `libraries` (Ruby) => Nix expression (functions and data)
+* `resources` (Ruby) => Nix expression (functions and data)
+* `files` => File
+* `templates` (ERB) => Files using vars and expressions
 
 ## NixOS: Setup
 
