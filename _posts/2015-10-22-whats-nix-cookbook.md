@@ -9,8 +9,8 @@ orchestrated deployment, CI jobs, etc.
 
 Here is some introductory material to get you started:
 
-* [Nix By Example](/nix-cookbook/nix-by-cookbook/)
-* [NixOS By Example](/nixos-cookbook/nix-by-cookbook/)
-* [NixOps By Example](/nixops-cookbook/nix-by-cookbook/)
+* [Nix By Example](/nix-cookbook/nix-by-example/)
+* [NixOS By Example](/nixos-cookbook/nix-by-example/)
+* [NixOps By Example](/nixops-cookbook/nix-by-example/)
 
 More to come soon!
