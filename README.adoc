@@ -1,0 +1,76 @@
+## Nix Cookbook
+
+A collection of Nix expressions and snippets that show you how you can get
+common tasks done in Nix.
+
+Target audience are those that have read the
+link:http://nixos.org/nix/manual/[Nix Manual] and found it great reference
+material but need more examples to be more productive with the following
+toolset:
+
+* link:http://nixos.org/nix/[Nix]
+* link:http://nixos.org/nixos/[NixOS]
+* link:http://nixos.org/nixops/[NixOps]
+* link:http://nixos.org/hydra/[Hydra]
+* link:http://nixos.org/disnix/[Disnix]
+
+### Prerequisites
+
+I recommend Nix 1.9+ (although most exercises should work in 1.8) and
+installing `nix-repl`:
+
+[source,shell]
+----
+$ nix-env -i nix-repl
+----
+
+Alternatively just start the `nix-shell` at the root of this repository:
+
+[source,shell]
+----
+$ nix-shell
+----
+
+### Basics
+
+To get started doing warmups the following snippets provide examples and
+exercises to get acquainted with the different builtin types in the Nix
+expression language.
+
+Start by using the `nix-repl`.
+
+* link:basics/integers.nix[Integers]
+* link:basics/booleans.nix[Booleans]
+* link:basics/strings.nix[Strings]
+* link:basics/paths.nix[Paths]
+* link:basics/files.nix[Files]
+* link:basics/lists.nix[Lists]
+* link:basics/attrsets.nix[Attrsets]
+* link:basics/lambdas.nix[Lambdas]
+* link:basics/concatenation.nix[Concatenation]
+* link:basics/importing.nix[Importing]
+
+### Packaging
+
+TODO: Provide examples for packaging different types of projects.
+
+Basic introductory packaging slides for Nix can be found at link:doc/nix.adoc[].
+
+### Modules
+
+TODO: Provide examples of using existing modules and writing your own custom
+NixOS modules.
+
+Basic introductory NixOS slides can be found at link:doc/nixos.adoc[].
+
+### Deployments
+
+TODO: Provide examples of writing your own NixOps based deployments.
+
+Basic introductory NixOps slides can be found at link:doc/nixops.adoc[].
+
+### Jobs
+
+TODO: Provide examples of writing your own Hydra jobsets and jobs.
+
+
