@@ -7,32 +7,22 @@ title: Nix By Example
 
 Command mapping:
 
-| Deb & APT | Nix       |
-|-----------|-----------|
-| debuild   | nix-build |
-| dpkg      | nix-build |
-| aptitude  | nix-env   |
-| apt-cache | nix-store |
-
+* `debuild`   => `nix-build`
+* `dpkg`      => `nix-build`
+* `aptitude`  => `nix-env`
+* `apt-cache` => `nix-store`
 
 Concept mapping:
 
-| Deb & APT               | Nix               |
-| ----------------------- | ----------------- |
-| DEB package definition  | Nix expression    |
-| APT source              | Nix channel       |
-| APT repository          | Nix binary cache  |
+* DEB package definition => Nix expression
+* APT source => Nix channel
+* APT repository => Nix binary cache
 
 ## Nix Packaging: Channels
 
-Like yum/apt repositories, but ... you have to define the revision you point
-to whether explicitly or implicitly (symlinks, or 30x redirects).
-
-A channel at the same _revision_ will always build the same packages as long
-as all the channel's dependencies (on other channels and/or Nix libraries)
-resolve the same way.
-
-Note: you must lock/pin down the version of all channels you use.
+Channels are like yum/apt repositories, but ... you have to define the
+revision you point to whether explicitly or implicitly (symlinks, or 30x
+redirects). Prefer explicit _pinning_ of channel revisions.
 
 ## Nix Packaging: `<nixpkgs>`
 
