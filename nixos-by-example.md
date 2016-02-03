@@ -127,5 +127,4 @@ $ nixos-option security.pki.certificateFiles
 ...
 ```
 
-Or visit the link:http://nixos.org/nixos/options.html[NixOS options search page].
-
+Or visit the link: [NixOS options search page](http://nixos.org/nixos/options.html).
