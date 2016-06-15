@@ -6,6 +6,18 @@ title: Tips & tricks for systemd and journald on NixOS
 This document contains a list of tips and tricks for working with systemd,
 journalctl, and related tools.
 
+### SysVinit vs Upstart vs Systemd
+
+The simplest cheatcheet:
+
+| SysVinit                     | Upstart           | Systemd                     |
+|---                           |---                |---                          |
+| `/etc/init.d/service start`  | `start service`   | `systemctl start service`   |
+| `/etc/init.d/service stop`   | `stop service`    | `systemctl stop service`    |
+| `/etc/init.d/service status` | `status service`  | `systemctl status service   |
+| `/etc/init.d/service restart`| `restart service` | `systemctl restart service  |
+
+
 ### Inspect Systemd Units
 
 Systemd has the following unit types you might be concerned with:
