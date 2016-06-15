@@ -8,15 +8,35 @@ journalctl, and related tools.
 
 ### SysVinit vs Upstart vs Systemd
 
-The simplest cheatcheet:
+The simplest cheatsheet:
 
-| SysVinit                      | Upstart           | Systemd                     |
-|-------------------------------|-------------------|-----------------------------|
-| `/etc/init.d/service start`   | `start service`   | `systemctl start service`   |
-| `/etc/init.d/service stop`    | `stop service`    | `systemctl stop service`    |
-| `/etc/init.d/service status`  | `status service`  | `systemctl status service`  |
-| `/etc/init.d/service restart` | `restart service` | `systemctl restart service` |
-
+<table>
+<tr>
+  <td>SysVinit</td>
+  <td>Upstart</td>
+  <td>Systemd</td>
+</tr>
+<tr>
+  <td>/etc/init.d/service start</td>
+  <td>start service</td>
+  <td>systemctl start service</td>
+</tr>
+<tr>
+  <td>/etc/init.d/service stop</td>
+  <td>stop service</td>
+  <td>systemctl stop service</td>
+</tr>
+<tr>
+  <td>/etc/init.d/service restart</td>
+  <td>restart service</td>
+  <td>systemctl restart service</td>
+</tr>
+<tr>
+  <td>/etc/init.d/service status</td>
+  <td>status service</td>
+  <td>systemctl status service</td>
+</tr>
+</table>
 
 ### Systemd Unit Types
 
