@@ -11,7 +11,7 @@ journalctl, and related tools.
 The simplest cheatcheet:
 
 | SysVinit                      | Upstart           | Systemd                     |
-|---                            |---                |---                          |
+|-------------------------------|-------------------|-----------------------------|
 | `/etc/init.d/service start`   | `start service`   | `systemctl start service`   |
 | `/etc/init.d/service stop`    | `stop service`    | `systemctl stop service`    |
 | `/etc/init.d/service status`  | `status service`  | `systemctl status service`  |
