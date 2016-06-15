@@ -138,4 +138,67 @@ consult `man journalctl` for more information.
 All users that are in the `systemd-journal` group should be able to query logs
 via `journalctl`. Ensure your SSH user is in this group via `groups USERNAME`.
 
+### NixOS Configuration for `journald`
 
+The NixOS expression for a node's configuration contains the following settings
+that are worth tuning on servers with high frequency events being logged.
+
+As of NixOS 16.03, the defaults for `services.journald.rateLimitBurst` and
+`services.journald.rateLimitInterval` are worth evaluating for your needs:
+
+```bash
+$ sudo nixos-option services.journald.rateLimitBurst
+Value:
+100
+
+Default:
+100
+
+Description:
+
+Configures the rate limiting burst limit (number of messages per
+interval) that is applied to all messages generated on the system.
+This rate limiting is applied per-service, so that two services
+which log do not interfere with each other's limit.
+
+...
+```
+
+And:
+
+```bash
+
+$ sudo nixos-option services.journald.rateLimitInterval
+Value:
+"10s"
+
+Default:
+"10s"
+
+Description:
+
+Configures the rate limiting interval that is applied to all
+messages generated on the system. This rate limiting is applied
+per-service, so that two services which log do not interfere with
+each other's limit. The value may be specified in the following
+units: s, min, h, ms, us. To turn off any kind of rate limiting,
+set either value to 0.
+
+```
+
+This means on this system `journald` will rate limit events per
+service after 100 messages within 10s. For many servers this is
+low, and you will want to adjust it with values like the following:
+
+```nix
+  services.journald.rateLimitBurst = 1000;
+  services.journald.rateLimitInterval = 1s;
+```
+
+The above will rate limit services to logging 1000 messages per second.
+
+You can also turn off rate limiting in `journald` with the following:
+
+```nix
+  services.journald.rateLimitInterval = 0;
+```
