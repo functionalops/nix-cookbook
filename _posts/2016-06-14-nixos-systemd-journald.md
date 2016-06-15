@@ -47,6 +47,26 @@ Systemd has the following unit types you might be concerned with:
   service, under which circumstances it should be automatically started,
   timeout periods or events, and the dependency or ordering relative to other
   systemd units.
+  In NixOS you can create a new systemd service like so:
+
+  ```nix
+  systemd.services.myservice = {
+    description = "My service is responsible for ...";
+    after = [ "multi-user.target" ];
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.bash ];
+    environment = {
+      MY_SERVICE_HOME = "/my/path/here";
+      MY_SERVICE_MAX_CONNS = toString myVar;
+    };
+    serviceConfig = {
+      User = "myuser";
+      ExecStart = path;
+      Restart = "always";
+    };
+  };
+  ```
+
 * *paths:* This type of unit defines a path to be used for path-based
   activation. For example, service units could be started, restarted, stopped,
   reloaded, etc when the file a path unit represents encounters a specific
