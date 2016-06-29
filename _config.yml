@@ -10,11 +10,12 @@ permalink:        pretty
 title:            Nix Cookbook
 tagline:          'Cookbook style to learning Nix expression language for Nix packaging and NixOS'
 description:      'by <a href="https://twitter.com/SusanPotter" target="_blank">@SusanPotter</a>.'
-url:              https://functionalops.github.io
-baseurl:          /nix-cookbook
+url:              https://funops.co
+baseurl:          nix-cookbook
 
 author:
   name:           'Susan Potter'
+  email:.         me+nix-cookbook@susanpotter.net
   url:            https://twitter.com/SusanPotter
 
 paginate:         5
