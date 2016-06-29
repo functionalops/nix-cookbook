@@ -15,7 +15,7 @@ baseurl:          nix-cookbook
 
 author:
   name:           'Susan Potter'
-  email:.         me+nix-cookbook@susanpotter.net
+  email:          me+nix-cookbook@susanpotter.net
   url:            https://twitter.com/SusanPotter
 
 paginate:         5
