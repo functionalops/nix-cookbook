@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips & tricks for systemd and journald on NixOS
+title: Tips &amp; tricks for systemd and journald on NixOS
 ---
 
 This document contains a list of tips and tricks for working with systemd,
